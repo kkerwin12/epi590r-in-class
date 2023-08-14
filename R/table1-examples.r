@@ -77,15 +77,15 @@ digits=list(
 	income~c(3,3),
 	sleep_wkdy~c(1,1),
 	sleep_wknd~c(1,1)
-),
+) ,
 missing_text = "Missing")|>
 add_p(test = list(all_continuous() ~ "t.test",
 									all_categorical() ~ "chisq.test"))|>
 	add_overall(col_label = "**Total**")|>
 modify_table_styling(
 	columns=label,
-	rows=label =="Race/Ethnicity",
-	footnote="https://www.nlsinfo.org/content/cohorts/nlsy79/topical-guide/household/race-ethnicity-immigration-data"
+	rows=label == "Race/Ethnicity",
+	footnote= "see https://www.nlsinfo.org/content/cohorts/nlsy79/topical-guide/household/race-ethnicity-immigration-data"
 )
 
 
