@@ -4,6 +4,7 @@ nlsy_cols <- c("glasses", "eyesight", "sleep_wkdy", "sleep_wknd",
 
 library(tidyverse)
 setwd("~/Documents/Teaching/Emory/epi590r-in-class/data/raw/")
+#doesn't work because everyone doesn't have same directory
 nlsy <- read_csv("nlsy.csv",
 								 na = c("-1", "-2", "-3", "-4", "-5", "-998"),
 								 skip = 1, col_names = nlsy_cols)
