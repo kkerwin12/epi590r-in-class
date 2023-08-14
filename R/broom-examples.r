@@ -60,10 +60,15 @@ library(lmtest)
 install.packages("sandwich")
 
 library(sandwich)
+#sex_cat
 model1_robust <- coeftest(mod_sex_cat,
 													vcov = vcovHC)
 model1_robust_stata <- coeftest(mod_sex_cat,
 																vcov = vcovHC,
 																type = "HC1")
-tidy(model1_robust)
-tidy(model1_robust_stata)
+broom::tidy(model1_robust)
+broom::tidy(model1_robust_stata)
+
+#eth_
+
+
