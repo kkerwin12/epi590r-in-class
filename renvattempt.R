@@ -25,3 +25,4 @@ raise <- function(x,power=2) {x^power}
 raise(2,2)
 raise(3,5)
 raise(3,)
+raise(3,3)
