@@ -5,3 +5,8 @@ gitcreds::gitcreds_set()
 
 install.packages("here")
 
+
+install.packages("renv")
+renv::init()
+
+
