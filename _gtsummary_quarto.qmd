@@ -190,5 +190,5 @@ stats<- list(n=nrow(nlsy),
  
 
 ```
-There were `r stats$n` participants with a mean sleep of `r stats$mean_sleep`.
+There were `r stats$n` participants with a mean sleep of `r round(stats$mean_sleep,1)`.
 
