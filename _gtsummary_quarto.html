@@ -96,7 +96,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="customization-of-tbl_summary" class="level1">
 <h1>Customization of <code>tbl_summary()</code></h1>
-<div class="cell" data-hash="_gtsummary_quarto_cache/html/tbl-one_82bce13941a5c7c3eaf89615a6914741">
+<div class="cell" data-hash="_gtsummary_quarto_cache/html/tbl-one_d4e3d7e638add165c6833ffedca23d3a">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl_summary</span>(</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  nlsy,</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">by =</span> sex_cat,</span>
@@ -630,6 +630,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p><a href="#tbl-one">Table&nbsp;1</a> is a table</p>
 <div class="cell" data-hash="_gtsummary_quarto_cache/html/tbl-two_a0b024f295af210583f0e903573a9174">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl_summary</span>(</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  nlsy,</span>
@@ -4434,12 +4435,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>There are 5 participants</p>
-<div class="cell" data-output-location="slide" data-hash="_gtsummary_quarto_cache/html/tbl-descr_d46d1919cf72758bbcd769cf7af77f2c">
+<div class="cell" data-output-location="slide" data-hash="_gtsummary_quarto_cache/html/tbl-descr_6a81906fdd31f0e993fefb341c4c0b8a">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>table1 <span class="ot">&lt;-</span> <span class="fu">tbl_summary</span>(</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  nlsy,</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">by =</span> sex_cat,</span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">include =</span> <span class="fu">c</span>(sex_cat, race_eth_cat, region_cat,</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>              eyesight_cat, glasses, age_bir)) <span class="sc">|&gt;</span> </span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>              eyesight, glasses, age_bir, sleep_wkdy,nsibs)) <span class="sc">|&gt;</span> </span>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_overall</span>(<span class="at">last =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>table1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -4936,27 +4937,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td headers="stat_1" class="gt_row gt_center">115</td>
 <td headers="stat_2" class="gt_row gt_center">124</td>
 <td headers="stat_0" class="gt_row gt_center">239</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">eyesight_cat</td>
+    <tr><td headers="label" class="gt_row gt_left">eyesight</td>
 <td headers="stat_1" class="gt_row gt_center"></td>
 <td headers="stat_2" class="gt_row gt_center"></td>
 <td headers="stat_0" class="gt_row gt_center"></td></tr>
-    <tr><td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Excellent</td>
+    <tr><td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;1</td>
 <td headers="stat_1" class="gt_row gt_center">1,582 (38%)</td>
 <td headers="stat_2" class="gt_row gt_center">1,334 (31%)</td>
 <td headers="stat_0" class="gt_row gt_center">2,916 (35%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Very good</td>
+    <tr><td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;2</td>
 <td headers="stat_1" class="gt_row gt_center">1,470 (35%)</td>
 <td headers="stat_2" class="gt_row gt_center">1,500 (35%)</td>
 <td headers="stat_0" class="gt_row gt_center">2,970 (35%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Good</td>
+    <tr><td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;3</td>
 <td headers="stat_1" class="gt_row gt_center">792 (19%)</td>
 <td headers="stat_2" class="gt_row gt_center">1,002 (23%)</td>
 <td headers="stat_0" class="gt_row gt_center">1,794 (21%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Fair</td>
+    <tr><td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;4</td>
 <td headers="stat_1" class="gt_row gt_center">267 (6.4%)</td>
 <td headers="stat_2" class="gt_row gt_center">365 (8.5%)</td>
 <td headers="stat_0" class="gt_row gt_center">632 (7.5%)</td></tr>
-    <tr><td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Poor</td>
+    <tr><td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;5</td>
 <td headers="stat_1" class="gt_row gt_center">47 (1.1%)</td>
 <td headers="stat_2" class="gt_row gt_center">85 (2.0%)</td>
 <td headers="stat_0" class="gt_row gt_center">132 (1.6%)</td></tr>
@@ -4980,6 +4981,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td headers="stat_1" class="gt_row gt_center">3,652</td>
 <td headers="stat_2" class="gt_row gt_center">3,091</td>
 <td headers="stat_0" class="gt_row gt_center">6,743</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">sleep_wkdy</td>
+<td headers="stat_1" class="gt_row gt_center">7.00 (6.00, 8.00)</td>
+<td headers="stat_2" class="gt_row gt_center">7.00 (6.00, 8.00)</td>
+<td headers="stat_0" class="gt_row gt_center">7.00 (6.00, 8.00)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Unknown</td>
+<td headers="stat_1" class="gt_row gt_center">2,582</td>
+<td headers="stat_2" class="gt_row gt_center">2,278</td>
+<td headers="stat_0" class="gt_row gt_center">4,860</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">nsibs</td>
+<td headers="stat_1" class="gt_row gt_center">3.00 (2.00, 5.00)</td>
+<td headers="stat_2" class="gt_row gt_center">3.00 (2.00, 5.00)</td>
+<td headers="stat_0" class="gt_row gt_center">3.00 (2.00, 5.00)</td></tr>
+    <tr><td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Unknown</td>
+<td headers="stat_1" class="gt_row gt_center">9</td>
+<td headers="stat_2" class="gt_row gt_center">9</td>
+<td headers="stat_0" class="gt_row gt_center">18</td></tr>
   </tbody>
   
   <tfoot class="gt_footnotes">
@@ -4999,12 +5016,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "1,002 (16%)"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">inline_text</span>(table1, <span class="at">variable=</span><span class="st">"eyesight_cat"</span>, <span class="at">column=</span><span class="st">"Female"</span>, </span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>                        <span class="at">pattern=</span><span class="st">"{n}/{N} ({p}%"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "NA/NA (NA%"</code></pre>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>stats<span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">n=</span><span class="fu">nrow</span>(nlsy),</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>                         <span class="at">mean_sleep=</span><span class="fu">mean</span>(nlsy<span class="sc">$</span>sleep_wkdy))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
+<p>There were 12686 participants with a mean sleep of NA.</p>
 </section>
 </section>
 

@@ -36,7 +36,9 @@ tbl_summary(
   by = sex_cat,
   include = c(sex_cat, race_eth_cat, region_cat,
               eyesight_cat, glasses, age_bir))
+
 ```
+@tbl-one is a table
 
 ```{r}
 #| label: tbl-two
@@ -179,12 +181,13 @@ table1 <- tbl_summary(
   nlsy,
   by = sex_cat,
   include = c(sex_cat, race_eth_cat, region_cat,
-              eyesight_cat, glasses, age_bir)) |> 
+              eyesight, glasses, age_bir, sleep_wkdy,nsibs)) |> 
   add_overall(last = TRUE)
 table1
 inline_text(table1, variable="age_bir",column= "Male")
 inline_text(table1, variable="race_eth_cat", level="Hispanic", column="Female")
-inline_text(table1, variable="eyesight_cat", column="Excellent", 
-						pattern="{n}/{N} ({p}%")
+stats<- list(n=nrow(nlsy),
+						 mean_sleep = mean(nlsy$sleep_wkdy))
 ```
+There were `r stats$n` participants with a mean sleep of `r stats$mean_sleep`.
 
